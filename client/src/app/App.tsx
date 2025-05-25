@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
+import { RouterProvider } from 'react-router-dom'
+import { router } from '@/router/router';
 import "./App.css";
-import supabase from "@/lib/supabase-client";
-import Layout from "./layout";
 
 function App() {
   return (
     <>
-      <Layout />
+      <RouterProvider router={router} />
     </>
   );
 }

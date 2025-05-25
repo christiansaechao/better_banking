@@ -1,0 +1,15 @@
+###
+GET http://localhost:3000/v1/auth/sign-up
+###
+
+POST http://localhost:3000/v1/auth/sign-up HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Test User",
+  "age": 21,
+  "occupation": "Bank Teller",
+  "branch_location": "Uptown Funk",
+  "status": "Active",
+  "password": "password123"
+}
