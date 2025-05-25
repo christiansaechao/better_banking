@@ -10,5 +10,8 @@ app.use(express.json());
 
 // Routes
 app.use(router);
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+})
 
 export default app;

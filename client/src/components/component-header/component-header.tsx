@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionHeader = ({ title, user }: { title: string, user: string }) => {
+const SectionHeader = ({ title, user }: { title: string, user: string | null | undefined }) => {
   return (
     <>
       <div className="text-3xl font-semibold">{title}</div>
