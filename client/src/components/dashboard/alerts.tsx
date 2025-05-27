@@ -1,5 +1,5 @@
 import React from "react";
-import { GenericCard } from "./card";
+import { GenericCard } from "../reusables/card";
 import { AlertTriangle, CircleAlert } from "lucide-react";
 
 const Alerts = () => {
