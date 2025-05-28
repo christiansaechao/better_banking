@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GenericCard } from "@/components/reusables/card";
+import { GenericCard } from "@/components/reusables";
 import { Button } from "@/components/ui/button";
 import { Search, PlusIcon, ArrowLeftRight, Banknote } from "lucide-react";
 const ThreeCards = () => {

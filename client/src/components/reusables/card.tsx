@@ -7,13 +7,13 @@ type GenericCardProps = {
   showButton: boolean;
 };
 
-export const GenericCard = ({
+const GenericCard = ({
   children,
   cardTitle,
   showButton,
 }: GenericCardProps) => {
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader className="flex justify-between items-center">
         <CardTitle className="font-semibold text-gray-700">
           {cardTitle}
@@ -28,3 +28,5 @@ export const GenericCard = ({
     </Card>
   );
 };
+
+export default GenericCard;

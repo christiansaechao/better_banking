@@ -7,7 +7,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export const SelectDropdown = ({
+const SelectDropdown = ({
   title,
   items,
   handleChange
@@ -34,3 +34,5 @@ export const SelectDropdown = ({
     </div>
   );
 };
+
+export default SelectDropdown;

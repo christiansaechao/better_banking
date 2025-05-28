@@ -4,10 +4,11 @@ import SearchBox from "@/components/customer-search/search-box";
 import ComponentHeader from "@/components/reusables/component-header";
 import SearchResults from "@/components/customer-search/search-results";
 import type { SearchParams } from "@/types/searchParams";
+import type { Tables } from "@/types/supabase-types";
 
 const CustomerSearch = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [userData, setUserData] = useState<any>([]);
+  const [userData, setUserData] = useState<Tables<"users">[]>([]);
 
   const getUsersData = async ({
     searchType,
@@ -17,10 +18,7 @@ const CustomerSearch = () => {
   }: SearchParams) => {
     try {
       const { data, error } = await supabase.from("users").select("*");
-
       if (error) throw error;
-
-      // Optional: Filter on client side if no server-side filtering is implemented
       setUserData(data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -38,7 +36,7 @@ const CustomerSearch = () => {
         description="Find customer accounts and information"
       />
       <SearchBox handleSearch={handleSearch} />
-      <SearchResults customerData={userData} />
+      <SearchResults customersData={userData} />
     </div>
   );
 };

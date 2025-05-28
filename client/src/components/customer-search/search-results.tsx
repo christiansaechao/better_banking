@@ -8,10 +8,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { GenericCard } from "@/components/reusables/card";
+import { GenericCard } from "@/components/reusables";
+import type { Tables } from '@/types/supabase-types';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const SearchResults = ({ customerData }: { customerData: any}) => {
+const SearchResults = ({ customersData } : { customersData: Tables<"users">[] }) => {
   return (
     <div className="w-full overflow-x-auto">
       <GenericCard cardTitle="Search Results" showButton={false} >

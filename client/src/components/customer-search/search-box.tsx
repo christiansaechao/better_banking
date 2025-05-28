@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { SelectDropdown } from "@/components/reusables/select-dropdown";
+import { SelectDropdown } from "@/components/reusables";
 
 import type { SearchParams } from "@/types/searchParams";
 

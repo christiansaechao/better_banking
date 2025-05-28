@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { GenericCard } from "../reusables/card";
+import { GenericCard } from "@/components/reusables";
 
 const dummyData = [
   {
