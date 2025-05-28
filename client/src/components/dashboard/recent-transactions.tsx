@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { GenericCard } from "./card";
+import { GenericCard } from "@/components/reusables";
 
 const dummyData = [
   {
@@ -58,16 +58,16 @@ const RecentTransactions = () => {
             </TableHeader>
             <TableBody>
               {dummyData.map((transaction) => (
-                <TableRow key={transaction.transactionId}>
-                  <TableCell>{transaction.time}</TableCell>
-                  <TableCell className="truncate">
+                <TableRow key={transaction.transactionId} className="hover:bg-muted/50">
+                  <TableCell className="text-left">{transaction.time}</TableCell>
+                  <TableCell className="truncate text-left">
                     {transaction.customer}
                   </TableCell>
-                  <TableCell className="truncate">
+                  <TableCell className="truncate text-left">
                     {transaction.account}
                   </TableCell>
-                  <TableCell>{transaction.type}</TableCell>
-                  <TableCell>{transaction.amount}</TableCell>
+                  <TableCell className="text-left">{transaction.type}</TableCell>
+                  <TableCell className="text-left">{transaction.amount}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
