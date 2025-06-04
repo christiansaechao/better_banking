@@ -10,11 +10,11 @@ const CustomTabs = () => {
         <TabsTrigger value="documents">Documents</TabsTrigger>
         <TabsTrigger value="relationships">Relationships</TabsTrigger>
       </TabsList>
-      <TabsContent value="account">Different accounts go here</TabsContent>
-      <TabsContent value="transactions">Change your password here.</TabsContent>
-      <TabsContent value="documents">Change your password here.</TabsContent>
+      <TabsContent value="account">No Other Accounts Available</TabsContent>
+      <TabsContent value="transactions">No Recent Transactions</TabsContent>
+      <TabsContent value="documents">No Documents Available</TabsContent>
       <TabsContent value="relationships">
-        Change your password here.
+        No Relationships Available
       </TabsContent>
     </Tabs>
   );

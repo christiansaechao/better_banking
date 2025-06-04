@@ -25,10 +25,10 @@ const CustomerProfile = () => {
       <Tabs />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <GenericCard cardTitle="Account Summary" showButton={false}>
-          Chart Goes here
+          No Data Available
         </GenericCard>
         <GenericCard cardTitle="Recent Transactions" showButton={false}>
-          Table goes here
+          No Data Available
         </GenericCard>
       </div>
     </div>
