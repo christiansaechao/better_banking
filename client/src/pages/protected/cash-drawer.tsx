@@ -1,7 +1,7 @@
 import React from "react";
 
 const CashDrawer = () => {
-  return <div>CashDrawer</div>;
+  return <div>In production...</div>;
 };
 
 export default CashDrawer;

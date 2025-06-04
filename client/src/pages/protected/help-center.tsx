@@ -2,7 +2,7 @@ import React from 'react'
 
 const HelpCenter = () => {
   return (
-    <div>HelpCenter</div>
+    <div>In production...</div>
   )
 }
 
